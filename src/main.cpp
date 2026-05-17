@@ -339,7 +339,6 @@ class $modify(PauseLayerModified, PauseLayer) {
 
 		progtracklabel::PLTLayer* menu_layer = progtracklabel::PLTLayer::create(PlayLayer::get()->m_level);
 		menu_layer->setID("progresslabeltrack-menulayer");
-		menu_layer->setZOrder(105);
 		// menu_layer->setAnchorPoint(CCPointMake(0.5f, 0.5f));
 		menu_layer->setPosition(CCPointZero);
 		menu_layer->setContentSize(win_size);
@@ -554,7 +553,8 @@ class $modify(PauseLayerModified, PauseLayer) {
 		button_save_counters->setPosition(320, 35);
 		menu_container->addChild(button_save_counters);
 		
-		CCScene::get()->addChild(menu_layer);
+		// CCScene::get()->addChild(menu_layer);
+		menu_layer->show();
 	}
 
 	void seeThroughSettingsUpdate(CCNode* layer_main) {

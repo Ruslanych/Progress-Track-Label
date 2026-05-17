@@ -1,3 +1,7 @@
+# 1.0.1
+- fix popup showing out
+- fix defaults
+
 # 1.0.0
 - Added the label
 - Added keybinds (buttons 1-9) while playing the level

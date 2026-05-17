@@ -8,7 +8,7 @@
 	},
 	"id": "ruslanych.progress_track_label",
 	"name": "Progress Track Label",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "Ruslanych",
 	"description": "Label the progress, count with keybinds",
 	"resources": {
@@ -43,7 +43,7 @@
 		"label-main": {
 			"name": "Label text main",
 			"type": "string",
-			"default": "25% / 50% / 75%",
+			"default": "50%: ctr1\\n75%: ctr2",
 			"filter": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890!@#$%^&*()`~-_=+[]{}\\|;:'\",<.>/?↑↓→←"
 		},
 		"newline-replacement": {
@@ -74,7 +74,7 @@
 			"type": "int",
 			"min": -100,
 			"max": 1000,
-			"default": 310
+			"default": 300
 		},
 		"size": {
 			"name": "Size",
@@ -85,14 +85,14 @@
 				"big-arrows": true,
 				"big-arrow-step": 0.2
 			},
-			"default": 1,
+			"default": 0.5,
 			"min": 0.1,
 			"max": 2
 		},
 		"opacity": {
 			"name": "Text Opacity",
 			"type": "int",
-			"default": 192,
+			"default": 160,
 			"min": 0,
 			"max": 255
 		},
