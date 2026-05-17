@@ -1,0 +1,169 @@
+{
+	"geode": "5.7.1",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "ruslanych.progress_track_label",
+	"name": "Progress Track Label",
+	"version": "v0.0.0",
+	"developer": "Ruslanych",
+	"description": "Label the progress, count with keybinds :>",
+	"resources": {
+		"sprites": [
+			"resources/PauseMenuButton.png",
+			"geode/resources/"
+		]
+	},
+	"dependencies": {
+		"geode.node-ids": ">=v1.23.0",
+		"geode.custom-keybinds": {
+			"version": "v2.1.0",
+			"required": true
+		}
+	},
+	"settings": {
+		"enable-mod": {
+			"name": "Enable mod",
+			"type": "bool",
+			"default": true
+		},
+		"label-main": {
+			"name": "Label text main",
+			"type": "string",
+			"default": "25% / 50% / 75%",
+			"filter": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890!@#$%^&*()`~-_=+[]{}\\|;:'\",<.>/?↑↓→←"
+		},
+		"newline-replacement": {
+			"name": "Newline replacement",
+			"description": "That's the text which will be replaced with newline character in the label\nAllowed characters: a-zA-Z!@#$%^&*()`~-_=+[]{}\\|;:'\",<.>/?\nRequired: at least two of those symbols",
+			"type": "string",
+			"default": "\\n",
+			"match": ".*[a-zA-z!@#$%^&*()`~\\-_=+\\[\\]{}|;:'\",<.>/?]{2,}.*",
+			"filter": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()`~-_=+[]{}\\|;:'\",<.>/?"
+		},
+		"counter-replacement": {
+			"name": "Counter replacement",
+			"description": "The text which will be replaced with the counter of certain number, mark that number with \"{}\" in this setting.\nExample: \"ctr{}\" will replace text \"ctr1\" with counter 1, \"ctr2\" with counter 2, etc.\nAllowed characters: a-zA-Z!@#$%^&*()`~-_=+[]{}\\|;:'\",<.>/?\nRequired: at least one combination of curly brackets {}",
+			"type": "string",
+			"default": "ctr{}",
+			"match": ".*\\{\\}.*",
+			"filter": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()`~-_=+[]{}\\|;:'\",<.>/?"
+		},
+		"position-x": {
+			"name": "Position X",
+			"type": "int",
+			"min": -100,
+			"max": 1000,
+			"default": 175
+		},
+		"position-y": {
+			"name": "Position Y",
+			"type": "int",
+			"min": -100,
+			"max": 1000,
+			"default": 310
+		},
+		"size": {
+			"name": "Size",
+			"type": "float",
+			"control": {
+				"arrows": true,
+				"arrow-step": 0.05,
+				"big-arrows": true,
+				"big-arrow-step": 0.2
+			},
+			"default": 1,
+			"min": 0.1,
+			"max": 2
+		},
+		"opacity": {
+			"name": "Text Opacity",
+			"type": "int",
+			"default": 192,
+			"min": 0,
+			"max": 255
+		},
+		"text-alignment": {
+			"name": "Text alignment",
+			"type": "string",
+			"one-of": ["Left", "Center", "Right"],
+			"default": "Right"
+		},
+		"color": {
+			"name": "Text color",
+			"type": "color",
+			"default": "#FFFFFF"
+		},
+		"font": {
+			"name": "Text font",
+			"type": "int",
+			"default": 0,
+			"min": -2,
+			"max": 59,
+			"control": {
+				"arrows": true,
+				"arrow-step": 1,
+				"big-arrows": false,
+				"slider": false,
+				"input": true
+			}
+		},
+		"increase-counter-1": {
+			"type": "keybind",
+			"name": "Increase counter 1",
+			"description": "Play/Progress Track Label/Counters",
+			"default": "One"
+		},
+		"increase-counter-2": {
+			"type": "keybind",
+			"name": "Increase counter 2",
+			"description": "Play/Progress Track Label/Counters",
+			"default": "Two"
+		},
+		"increase-counter-3": {
+			"type": "keybind",
+			"name": "Increase counter 3",
+			"description": "Play/Progress Track Label/Counters",
+			"default": "Three"
+		},
+		"increase-counter-4": {
+			"type": "keybind",
+			"name": "Increase counter 4",
+			"description": "Play/Progress Track Label/Counters",
+			"default": "Four"
+		},
+		"increase-counter-5": {
+			"type": "keybind",
+			"name": "Increase counter 5",
+			"description": "Play/Progress Track Label/Counters",
+			"default": "Five"
+		},
+		"increase-counter-6": {
+			"type": "keybind",
+			"name": "Increase counter 6",
+			"description": "Play/Progress Track Label/Counters",
+			"default": "Six"
+		},
+		"increase-counter-7": {
+			"type": "keybind",
+			"name": "Increase counter 7",
+			"description": "Play/Progress Track Label/Counters",
+			"default": "Seven"
+		},
+		"increase-counter-8": {
+			"type": "keybind",
+			"name": "Increase counter 8",
+			"description": "Play/Progress Track Label/Counters",
+			"default": "Eight"
+		},
+		"increase-counter-9": {
+			"type": "keybind",
+			"name": "Increase counter 9",
+			"description": "Play/Progress Track Label/Counters",
+			"default": "Nine"
+		}
+	}
+}
