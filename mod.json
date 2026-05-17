@@ -8,9 +8,9 @@
 	},
 	"id": "ruslanych.progress_track_label",
 	"name": "Progress Track Label",
-	"version": "v0.0.0",
+	"version": "v1.0.0",
 	"developer": "Ruslanych",
-	"description": "Label the progress, count with keybinds :>",
+	"description": "Label the progress, count with keybinds",
 	"resources": {
 		"sprites": [
 			"resources/PauseMenuButton.png",
@@ -24,6 +24,16 @@
 			"required": true
 		}
 	},
+	"links": {
+		"source": "https://github.com/Ruslanych/Progress-Track-Label"
+	},
+	"tags": [
+		"interface",
+		"offline",
+		"customization",
+		"gameplay",
+		"utility"
+	],
 	"settings": {
 		"enable-mod": {
 			"name": "Enable mod",
