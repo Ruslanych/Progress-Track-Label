@@ -8,7 +8,7 @@
 	},
 	"id": "ruslanych.progress_track_label",
 	"name": "Progress Track Label",
-	"version": "v1.0.1",
+	"version": "v1.0.2",
 	"developer": "Ruslanych",
 	"description": "Label the progress, count with keybinds",
 	"resources": {

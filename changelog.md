@@ -1,3 +1,7 @@
+# 1.0.2
+- fixed code blunders
+- enhance "Enable Mod" setting behavior on change while playing a level
+
 # 1.0.1
 - fix popup showing out
 - fix defaults
